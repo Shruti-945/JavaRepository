@@ -8,6 +8,7 @@ public class SearchinString {
         String word=obj.nextLine();
         System.out.println("Enter the character to be found");
         //How to take character input in Scanner class.
+        //Character input usually taken through BufferedReader.
         char target=obj.next().trim().charAt(0);   
         System.out.println("Index of the target character is " + characterSearch(word, target));
         //System.out.println(Arrays.toString(word.toCharArray())).
