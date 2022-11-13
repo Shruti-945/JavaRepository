@@ -1,6 +1,6 @@
 public class Floor {
     public static void main(String[] args) {
-        int[] arr={2,3,5,9,14,16,18};
+        int[] arr={2,3,5,9,14,16,18};  //Sorted array=Binary Search
         int target=14;
         int ans=floor(arr,target);
         System.out.println("Floor index of the element is "+ans);
