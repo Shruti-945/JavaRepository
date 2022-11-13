@@ -2,6 +2,7 @@ import java.util.Arrays;
 public class BinarySearch {
     public static void main(String[] args) {
         //Binary search is used only for sorted array.
+        //Binary search complexity is 0(log N).
         int[] arr={2,4,6,8,9,12};
         int target=12;
         int ans=Binarysearch(arr, target);
