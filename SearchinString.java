@@ -11,7 +11,7 @@ public class SearchinString {
         //Character input usually taken through BufferedReader.
         char target=obj.next().trim().charAt(0);   
         System.out.println("Index of the target character is " + characterSearch(word, target));
-        //System.out.println(Arrays.toString(word.toCharArray())).
+        //or System.out.println(Arrays.toString(word.toCharArray());
         //then check with indexing.
     }
     static int characterSearch(String word, char target) {
