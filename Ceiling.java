@@ -9,7 +9,7 @@ public class Ceiling {
     //Return index of smallest number>=target.
     static int ceiling(int[] arr,int target) {
         int start=0;
-        int end=arr.length;
+        int end=arr.length-1;
         while(start<=end) {
         //Find the middle element.
         //This is in the while loop because mid value is changing according to the expression in order to half the array.
