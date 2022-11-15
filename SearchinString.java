@@ -14,6 +14,7 @@ public class SearchinString {
         //or System.out.println(Arrays.toString(word.toCharArray());
         //then check with indexing.
     }
+    //Return the index of the target element.
     static int characterSearch(String word, char target) {
         for(int index=0;index<word.length();index++) {
             if(word.charAt(index)==target) {
