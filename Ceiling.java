@@ -10,14 +10,14 @@ public class Ceiling {
     static int ceiling(int[] arr,int target) {
         int start=0;
         int end=arr.length-1;
+         //but what if target >greatest element in the array.
+        if(target>arr[arr.length-1]) {
+            return -1;
+        }
         while(start<=end) {
         //Find the middle element.
         //This is in the while loop because mid value is changing according to the expression in order to half the array.
         int mid=start+(end-start)/2; //  //It might be possible that start+end exceeds the range of integer value.
-        //but what if target >greatest element in the array.
-        if(target>arr[arr.length-1]) {
-            return -1;
-        }
           if(target<arr[mid]) {
             end=mid-1;
            }
