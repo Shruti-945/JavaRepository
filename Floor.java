@@ -18,17 +18,17 @@ public class Floor {
         //Find the middle element.
         //This is in the while loop because mid value is changing according to the expression in order to half the array.
         int mid=start+(end-start)/2;  //It might be possible that start+end exceeds the range of integer value.
+        if(target==arr[mid]){
+         //Answer found.
+         return mid;
+        }
         if(target<arr[mid]) {
             end=mid-1;
         }
         else if(target>arr[mid]) {
             start=mid+1;
         }
-        else if(target==arr[mid]){
-         //Answer found.
-         return mid;
-        }
-        }
+       }
         return end;
  }
 }
